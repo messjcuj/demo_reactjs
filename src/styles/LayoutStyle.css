@@ -1,0 +1,95 @@
+
+.item1 { grid-area: header;}
+.item2 { grid-area: left;margin-left:45%;margin-right:45%;}
+.item3 { grid-area: right;border-radius:15px 15px 15px 15px; background-color: rgba(255, 254, 254, 0.15);margin-left:30%;margin-right:30%;}
+.item4 { grid-area: footer; }
+.grid-container {
+display: grid;
+grid-template-areas:
+      'header header header header header header'
+      'left left left left left left'
+      'right right right right right right'
+      'footer footer footer footer footer footer';
+gap: 10px;
+padding: 10px;
+color: #ced0d1;
+background-image: url('./../images/background.jpg');
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: fixed;
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
+overflow: auto;
+color: white;
+}
+.grid-container > div {
+text-align: center;
+padding: 20px 0;
+font-size: 30px;
+}
+.header{
+  position: fixed;
+  color: white;
+  text-decoration: none;
+}
+.footer{
+  color: white;
+  font-family:'arial';
+
+}
+.link{
+  text-decoration: none;
+  color:#00CED1;
+  font-family:'arial';
+  
+
+}
+.error{
+  color:red;
+  text-align: center;
+}
+
+.loginform{
+  margin-left: 10%;
+  margin-right: 10%;
+  font-family:'arial';
+  }
+
+/*setting responsive*/
+@media only screen and (max-width: 768px){
+    .item1 { grid-area: header;}
+.item2 { grid-area: left;margin-left:45%;margin-right:45%;}
+.item3 { grid-area: right;border-radius:15px 15px 15px 15px; background-color: rgba(255, 254, 254, 0.15);margin-left:10%;margin-right:10%;}
+.item4 { grid-area: footer; }
+.grid-container {
+display: grid;
+grid-template-areas:
+      'header header header header header header'
+      'left left left left left left'
+      'right right right right right right'
+      'footer footer footer footer footer footer';
+gap: 10px;
+padding: 10px;
+color: #ced0d1;
+background-image: url('./../images/background.jpg');
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: fixed;
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
+overflow: auto;
+color: white;
+}
+.grid-container > div {
+text-align: center;
+padding: 20px 0;
+font-size: 30px;
+}
+  
+  }
